@@ -1,5 +1,5 @@
 {
-  "name": "translator",
+  "name": "easy-translator",
   "version": "1.0.0",
   "description": "無料の翻訳ツール",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Taka005/translator.git"
+    "url": "git+https://github.com/Taka005/easy-translator.git"
   },
   "keywords": [
     "translate",
@@ -17,9 +17,9 @@
   "author": "Taka005 <01taka005@gmail.com> (https://taka.ml/)",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/Taka005/translator/issues"
+    "url": "https://github.com/Taka005/easy-translator/issues"
   },
-  "homepage": "https://github.com/Taka005/translator#readme",
+  "homepage": "https://github.com/Taka005/easy-translator#readme",
   "dependencies": {
     "nightmare": "^3.0.2"
   }
