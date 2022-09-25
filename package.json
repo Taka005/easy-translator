@@ -11,7 +11,8 @@
     "url": "git+https://github.com/Taka005/translator.git"
   },
   "keywords": [
-    "translate"
+    "translate",
+    "google-translate"
   ],
   "author": "Taka005 <01taka005@gmail.com> (https://taka.ml/)",
   "license": "GPL-3.0",
