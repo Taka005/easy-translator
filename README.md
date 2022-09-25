@@ -22,6 +22,6 @@ const { translate } = require("easy-translator");
 
 ここから連絡してください
 
-- E-mail <a href="mailto:support@taka.ml" target="_blank">"support@taka.ml"</a>
+- E-mail <a href="mailto:support@taka.ml" target="_blank">support@taka.ml</a>
 - Discrd <a href="https://discord.gg/GPs3npB63m">鷹のすみか</a>
 ---
