@@ -6,6 +6,9 @@
   "scripts": {
     "test": "node ./test.js"
   },
+  "engines": {
+    "node": "16.x"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Taka005/easy-translator.git"
