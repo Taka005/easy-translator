@@ -1,31 +1,17 @@
-const Nightmare = require("nightmare");
+const fetch = require("node-fetch");
 
 async function translator(from,to,text){
   try{
-    const nightmare = new Nightmare({
-      ignoreDownloads: true,
-      waitTimeout: 60000,
-    });
+    const translate = await fetch(`https://translate.googleapis.com/translate_a/single?client=gtx&sl=${from}&tl=${to}&dt=t&dj=1&q=${text}`)
+      .then(res => res.json())
+      .catch(error =>{
+        throw new Error(error)
+      });
+
+    if(!translate.sentences[0].trans) throw new Error("翻訳できませんでした");
     
-    const url = `https://translate.google.com/?sl=${from}&text=${text}&tl=${to}&op=translate`;
-    const translated = await nightmare
-      .goto(url)
-      .evaluate(() =>{
-         const button = document.querySelector("form[action='https://consent.google.com/s'] button")
-        if(button){
-          button.click();
-        }
-      })
-      .wait("span[jsname=jqKxS]")
-      .wait(500)
-      .evaluate(() =>(document.querySelector("span[jsname=jqKxS]")).innerText)
-      .end();
-    
-    if(!translated){
-      throw new Error("翻訳できませんでした");
-    }
-    
-    return translated.toString();
+    const translated = translate.sentences[0].trans;
+    return translated
   }catch(error){
     throw new Error(error);
   }
