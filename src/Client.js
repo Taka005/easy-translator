@@ -8,7 +8,7 @@ async function translator(from,to,text){
         throw new Error(error)
       });
 
-    const translated = translate_data.sentences.map((sentence)=>{
+    const translated = translate.sentences.map((sentence)=>{
       return sentence.trans
     });
     return translated.join("");
