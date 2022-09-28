@@ -8,10 +8,10 @@ async function translator(from,to,text){
         throw new Error(error)
       });
 
-    if(!translate.sentences[0].trans) throw new Error("翻訳できませんでした");
-    
-    const translated = translate.sentences[0].trans;
-    return translated
+    const translated = translate_data.sentences.map((sentence)=>{
+      return sentence.trans
+    });
+    return translated.join("");
   }catch(error){
     throw new Error(error);
   }
