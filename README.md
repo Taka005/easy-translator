@@ -1,4 +1,4 @@
-[![Node.js Package](https://github.com/Taka005/easy-translator/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/Taka005/easy-translator/actions/workflows/npm-publish.yml)
+[![Node.js Package](https://github.com/Taka005/easy-translator/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/Taka005/easy-translator/actions/workflows/npm-publish.yml)<br>
 There is an English version at the bottom of the page.
 # translator
 - 無料で無制限の翻訳ツール
