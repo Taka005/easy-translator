@@ -19,7 +19,7 @@ async function translator(from,to,text){
 
 async function translate(from,to,text){
   if(text.length > 5000){
-    throw new Error("最大翻訳数は5000文字以下です");
+    throw new Error("最大翻訳数は5000文字以下です(The maximum number of translations is 5000 characters or less)");
   }
   const translated = await translator(from,to, encodeURIComponent(text))
   return translated;
